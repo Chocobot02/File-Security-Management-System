@@ -15,7 +15,7 @@ create table securedfiles(
     );
 
 
--- para no need na update nang update automatic na :)
+-- make the update of status automtic
 DELIMITER //
 CREATE TRIGGER statuschecker
 BEFORE INSERT ON securedfiles
