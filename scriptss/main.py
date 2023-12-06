@@ -6,7 +6,19 @@ import os, sys
 import loginUI
 
 
+'''
+defaultuser = 123
+defaultpass = 123 
+adminpassword = 'adminpass'
 
+-- in login you can change it in login.py --
+
+
+NOTE: need to install Pyqt6 and mysql.connector firt
+
+This is the file should be executed.
+
+'''
 
 if __name__=='__main__':
     app = QApplication(sys.argv)

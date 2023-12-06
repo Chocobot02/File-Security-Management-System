@@ -110,10 +110,3 @@ class tableUI(QWidget, uisetup):
         # Remove rows from QTableWidget
         for row in sorted(selected_rows, reverse=True):
             self.table_widget.removeRow(row)
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    main_window = tableUI()
-    main_window.show()
-    sys.exit(app.exec())
-        

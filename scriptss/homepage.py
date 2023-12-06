@@ -8,7 +8,12 @@ import sys
 from PyQt6.QtWidgets import QWidget
 from fetch import uisetup, DataFetch
 
-
+'''
+The MainUI class encapsulates
+ the user interface and related functionalities.
+   It inherits from QWidget and uisetup. The initUI
+     method initializes the user interface and encapsulates the setup logic.
+'''
 class MainUI(QWidget, uisetup):
     
     def __init__(self) -> None:
@@ -33,7 +38,7 @@ class MainUI(QWidget, uisetup):
         self.additem_label.setText('             ADD NEW DATA')
         self.additem_label.setStyleSheet('color: white; font-size: 15px')
 
-        #to make the label  clickable 
+        #para maging clickable ang label(img)
         self.additem.setScaledContents(True)
         self.additem.mousePressEvent = self.showaddfiles
         self.additem.setMouseTracking(True)  # Enable mouse tracking to receive hover events
@@ -44,6 +49,7 @@ class MainUI(QWidget, uisetup):
         self.labelpin.setStyleSheet('color: white; font-weight: bold; font-size: 20px')
 
         self.pininput = self.createLabel('INPUT PIN', True)
+        #ioverride ang fontstyles na nakalagay sa function since need na mas malaki tignan to
         font = self.pininput.font()
         font.setPointSize(16)  # Set the font size to 16 (adjust as needed)
         self.pininput.setFont(font)
@@ -236,8 +242,3 @@ class AddUi(QDialog, uisetup):
         else:
             DataFetch.add_to_database(srcode,student_name,appuser,apppass,application)
     
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    main_window = MainUI()
-    main_window.show()
-    sys.exit(app.exec())

@@ -6,17 +6,19 @@ import os, sys
 from PyQt6.QtWidgets import QWidget
 from fetch import uisetup
 
+#polymorph na rin din siguro dito ssince different ui which is a qwidget but it has different form
+#inheritance= naginherit ka ng method(setup_ui) sa uisetup na class na galing sa fetch module same sa qwidget
 class loginUI(QWidget, uisetup):
     
     def __init__(self) -> None:
-        super().__init__() 
+        super().__init__() #dito initialize natin ang super( or kung ano yung sa parent nya)
         self.initUI()
     
     def initUI(self):
-        self.setup_ui(self,title='File Security Management System - Login', width=370, height=450) 
+        self.setup_ui(self,title='File Security Management System - Login', width=370, height=450) #ito ang isa sa mga inenherit natin na function/methods from the uisetp class
         #elements in label_latyout
         self.title = QLabel(self)
-        self.title.setText('        FILE SECURITY \nMANAGEMENT SYSTEM')
+        self.title.setText('        FILE SECURITY \nMANAGEMENT SYSTEM') # ayaw ma justify mano mano na lang
         self.title.setStyleSheet('''
         color: white;
         font-weight: bold;
@@ -90,9 +92,4 @@ class loginUI(QWidget, uisetup):
         else:
             QMessageBox.information(self, 'Unknown User', 'User Does Not Exist\nCheck the Password or Username!')
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    main_window = loginUI()
-    main_window.show()
-    sys.exit(app.exec())
         

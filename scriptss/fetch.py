@@ -22,7 +22,12 @@ class DataFetch:
             QMessageBox.warning(None, 'Connection Error', 'Connection Failed')
             return None
 
-
+    '''
+    Abstraction dito ay ang user doesn't need to know the inner workings of the MySQL 
+    connection or query execution; they work with high-level operations like connecting, 
+    executing queries, and fetching results. The details of how these operations are 
+    implemented are abstracted away since kinocall natin din ito sa ibang script as a func only
+    '''
     @staticmethod
     def add_to_database(srcode, studname, aname, apass, appname):
         # Get data from parameters
@@ -168,7 +173,7 @@ class uisetup:
         background.setPixmap(pxm)
         background.setGeometry(0, 0, width, height)
 
-    #to make the qlinedit called easy with stylesheet 
+    #dami kase qlineedit dito kaya gawa na lang func  
     def createLabel(self, text, password_mode=False, style ='border-radius: 13px;'):
         if password_mode:
             line_edit = QLineEdit(self)# f password_mode is True, create a qlineedrt in Password mode
