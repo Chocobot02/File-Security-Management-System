@@ -14,7 +14,6 @@ The File Security Management System is a PyQt6-based desktop application designe
 
 
 > [!IMPORTANT]
-> Note:
 > install the dependencies first to make the system run completely.
 
 1. PyQT6
