@@ -9,11 +9,11 @@ from fetch import uisetup
 class loginUI(QWidget, uisetup):
     
     def __init__(self) -> None:
-        super().__init__() #dito initialize natin ang super( or kung ano yung sa parent nya)
+        super().__init__()
         self.initUI()
     
     def initUI(self):
-        self.setup_ui(self,title='File Security Management System - Login', width=370, height=450) #ito ang isa sa mga inenherit natin na function/methods from the uisetp class
+        self.setup_ui(self,title='File Security Management System - Login', width=370, height=450) 
         #elements in label_latyout
         self.title = QLabel(self)
         self.title.setText('        FILE SECURITY \nMANAGEMENT SYSTEM') # ayaw ma justify mano mano na lang
