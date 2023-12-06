@@ -6,8 +6,6 @@ import os, sys
 from PyQt6.QtWidgets import QWidget
 from fetch import uisetup
 
-#polymorph na rin din siguro dito ssince different ui which is a qwidget but it has different form
-#inheritance= naginherit ka ng method(setup_ui) sa uisetup na class na galing sa fetch module same sa qwidget
 class loginUI(QWidget, uisetup):
     
     def __init__(self) -> None:
