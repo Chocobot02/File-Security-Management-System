@@ -4,25 +4,26 @@ The File Security Management System is a PyQt6-based desktop application designe
 
 ## Features
 
- - Simple and intuitive design for efficient data navigation and management.
- - User can add, delete, and view their files in a table format.
- - Dual Access Level
-  - Admin Access: Requires an admin password for full access, allowing viewing of sensitive information, including passwords in their original format.
-  - Normal Access: Provides access to users with a standard password, displaying passwords in a secure, obscured format for enhanced privacy.
-
+* Simple GUI design for efficient data navigation and management.
+* User can add, delete, and view their files in a table format.
+* Dual Access Level
+    * Admin Access: Requires an admin password for full access, allowing viewing of sensitive information, including passwords in their original format.
+    * Normal Access: Provides access to users with a standard password, displaying passwords in a secure, obscured format for enhanced privacy.
 
 ## UI's
 
-1. Login UI
+> Login UI
+   
 ![login](https://github.com/Chocobot02/File-Security-Management-System/assets/73695287/b267d702-5abe-48ca-b6fd-0e86db963a6f)
 
-2. Landing UI
+> Landing UI
 ![landing](https://github.com/Chocobot02/File-Security-Management-System/assets/73695287/8e246fbd-7090-4251-a6d5-6f3dba3c97a0)
 
-3. Add Data UI  
+> Add Data UI
+   
 ![addacc](https://github.com/Chocobot02/File-Security-Management-System/assets/73695287/de1b4214-55f8-4b43-9833-c08bd64efb39)
 
-5. table
+> table
 ![table](https://github.com/Chocobot02/File-Security-Management-System/assets/73695287/e9418763-ae32-474a-a491-f8c3b258ea8e)
 
 
