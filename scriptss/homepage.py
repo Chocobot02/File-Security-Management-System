@@ -8,12 +8,6 @@ import sys
 from PyQt6.QtWidgets import QWidget
 from fetch import uisetup, DataFetch
 
-'''
-The MainUI class encapsulates
- the user interface and related functionalities.
-   It inherits from QWidget and uisetup. The initUI
-     method initializes the user interface and encapsulates the setup logic.
-'''
 class MainUI(QWidget, uisetup):
     
     def __init__(self) -> None:
@@ -54,7 +48,7 @@ class MainUI(QWidget, uisetup):
         font.setPointSize(16)  # Set the font size to 16 (adjust as needed)
         self.pininput.setFont(font)
 
-        self.adminpin = self.createLabel('INPUT ADMIN PIN(OPTIONAL)', True) #explain kung para san na lang to
+        self.adminpin = self.createLabel('INPUT ADMIN PIN(OPTIONAL)', True) 
         font = self.adminpin.font()
         font.setPointSize(12)  # Set the font size to 16 (adjust as needed)
         self.adminpin.setFont(font)
